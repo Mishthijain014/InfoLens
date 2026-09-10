@@ -1,4 +1,4 @@
-# INFOLENS
+# INFOLENS:
 
 1. What Are We Building?
 We are building a web application that helps content creators collect information from different sources and quickly understand it using AI.
