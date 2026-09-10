@@ -27,7 +27,6 @@ Keep the project simple enough to complete and demonstrate properly.
 
 
 5. Target Users
-User
 What They Want
 Content Creator
 Quickly understand topics and find ideas.
