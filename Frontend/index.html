@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InfoLens</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                InfoLens
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">
+                            Product
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">
+                            How It Works
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">
+                            Features
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+
+                    <a href="login.html" class="btn btn-outline-dark">
+                        Login
+                    </a>
+
+                    <a href="signup.html" class="btn btn-primary">
+                        Get Started
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+
+                <!-- Left Content -->
+                <div class="col-lg-6">
+
+                    <span class="badge rounded-pill bg-light text-primary px-3 py-2 mb-3">
+                        AI-Powered Content Intelligence
+                    </span>
+
+                    <h1 class="display-4 fw-bold mb-4">
+                        Turn Your Content Into
+                        <span class="text-primary"> Clear Insights.</span>
+                    </h1>
+
+                    <p class="lead text-secondary mb-4">
+                        InfoLens helps you transform articles, YouTube videos,
+                        RSS feeds, and documents into clear, editable AI-powered
+                        summaries.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+
+                        <a href="signup.html" class="btn btn-primary btn-lg px-4">
+                            Get Started
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+
+                        <a href="#how-it-works" class="btn btn-outline-dark btn-lg px-4">
+                            See How It Works
+                        </a>
+
+                    </div>
+
+                    <p class="small text-secondary mt-4">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        Summarize. Edit. Export.
+                    </p>
+
+                </div>
+
+
+                <!-- Right Preview -->
+                <div class="col-lg-6 mt-5 mt-lg-0">
+
+                    <div class="hero-preview shadow-lg">
+
+                        <!-- Fake Browser Header -->
+                        <div class="preview-header">
+                            <div class="d-flex gap-2">
+                                <span class="preview-dot"></span>
+                                <span class="preview-dot"></span>
+                                <span class="preview-dot"></span>
+                            </div>
+                        </div>
+
+                        <!-- Dashboard Preview -->
+                        <div class="preview-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Content Analysis</h5>
+                                    <small class="text-secondary">
+                                        Your latest insights
+                                    </small>
+                                </div>
+
+                                <span class="badge bg-primary-subtle text-primary">
+                                    AI Ready
+                                </span>
+                            </div>
+
+
+                            <!-- Input Card -->
+                            <div class="preview-card mb-3">
+
+                                <div class="d-flex align-items-center gap-3">
+
+                                    <div class="icon-box">
+                                        <i class="bi bi-file-text"></i>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="mb-1 fw-semibold">
+                                            Article Analysis
+                                        </h6>
+
+                                        <small class="text-secondary">
+                                            AI-generated summary
+                                        </small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Summary Card -->
+                            <div class="preview-card">
+
+                                <div class="d-flex align-items-center gap-2 mb-3">
+
+                                    <i class="bi bi-stars text-primary"></i>
+
+                                    <h6 class="fw-bold mb-0">
+                                        Summary
+                                    </h6>
+
+                                </div>
+
+                                <div class="summary-line"></div>
+                                <div class="summary-line"></div>
+                                <div class="summary-line short"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTENT TYPES SECTION ================= -->
+
+    <section class="content-types-section py-5" id="product">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+
+                <span class="badge rounded-pill bg-light text-primary px-3 py-2 mb-3">
+                    Supported Content
+                </span>
+
+                <h2 class="fw-bold">
+                    Bring Your Content.
+                    <span class="text-primary">We'll Handle the Rest.</span>
+                </h2>
+
+                <p class="text-secondary mt-3">
+                    Add content from different sources and let InfoLens
+                    turn it into useful insights.
+                </p>
+
+            </div>
+
+
+            <!-- Content Cards -->
+            <div class="row g-4">
+
+                <!-- Article -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-link-45deg"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Article URL
+                        </h5>
+
+                        <p class="text-secondary">
+                            Paste an article link and InfoLens will
+                            extract and summarize the content.
+                        </p>
+
+                        <span class="small text-primary">
+                            URL Input
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- YouTube -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-youtube"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            YouTube Videos
+                        </h5>
+
+                        <p class="text-secondary">
+                            Provide a YouTube video and convert its
+                            transcript into a concise summary.
+                        </p>
+
+                        <span class="small text-primary">
+                            Video Input
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RSS -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-rss"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            RSS Feeds
+                        </h5>
+
+                        <p class="text-secondary">
+                            Add an RSS feed to process content from
+                            your preferred source.
+                        </p>
+
+                        <span class="small text-primary">
+                            Feed Input
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PDF -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-file-earmark-pdf"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            PDF Documents
+                        </h5>
+
+                        <p class="text-secondary">
+                            Upload PDF documents and extract the
+                            important information automatically.
+                        </p>
+
+                        <span class="small text-primary">
+                            File Upload
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Word -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-file-earmark-word"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Word Documents
+                        </h5>
+
+                        <p class="text-secondary">
+                            Upload DOC or DOCX files and turn long
+                            documents into clear summaries.
+                        </p>
+
+                        <span class="small text-primary">
+                            File Upload
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TXT -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="content-type-card h-100">
+
+                        <div class="content-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Text Files
+                        </h5>
+
+                        <p class="text-secondary">
+                            Upload plain text files and quickly
+                            generate structured insights.
+                        </p>
+
+                        <span class="small text-primary">
+                            File Upload
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="how-it-works-section py-5" id="how-it-works">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="badge rounded-pill bg-light text-primary px-3 py-2 mb-3">
+                    How It Works
+                </span>
+
+                <h2 class="fw-bold">
+                    From Content to
+                    <span class="text-primary">Clarity in Three Steps.</span>
+                </h2>
+
+                <p class="text-secondary mt-3">
+                    InfoLens makes content analysis simple, fast, and easy to refine.
+                </p>
+
+            </div>
+
+
+            <!-- Steps -->
+            <div class="row g-4">
+
+                <!-- Step 1 -->
+                <div class="col-lg-4">
+
+                    <div class="process-card h-100">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div class="process-icon">
+                            <i class="bi bi-cloud-upload"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Add Your Content
+                        </h5>
+
+                        <p class="text-secondary">
+                            Add an article URL, YouTube video, RSS feed,
+                            PDF, DOC/DOCX, or TXT file.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 2 -->
+                <div class="col-lg-4">
+
+                    <div class="process-card h-100">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="process-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            AI Analyzes It
+                        </h5>
+
+                        <p class="text-secondary">
+                            InfoLens extracts the content and uses AI
+                            to generate a clear and concise summary.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 3 -->
+                <div class="col-lg-4">
+
+                    <div class="process-card h-100">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="process-icon">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Edit & Export
+                        </h5>
+
+                        <p class="text-secondary">
+                            Review and edit your summary, then export
+                            it into the format you need.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Flow Line -->
+            <div class="text-center mt-5">
+
+                <p class="small text-secondary mb-0">
+                    <i class="bi bi-arrow-right-circle me-2"></i>
+                    Your content stays under your control from input to export.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURES SECTION ================= -->
+
+    <section class="features-section py-5" id="features">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="badge rounded-pill bg-light text-primary px-3 py-2 mb-3">
+                    Features
+                </span>
+
+                <h2 class="fw-bold">
+                    Everything You Need to
+                    <span class="text-primary">Understand Content.</span>
+                </h2>
+
+                <p class="text-secondary mt-3">
+                    Simple tools that help you go from lengthy content
+                    to useful information.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            AI-Powered Summaries
+                        </h5>
+
+                        <p class="text-secondary">
+                            Generate concise, meaningful summaries from
+                            articles, videos, feeds, and documents using AI.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Edit Before Export
+                        </h5>
+
+                        <p class="text-secondary">
+                            Review the generated summary and make your own
+                            changes before saving or exporting it.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-file-earmark-arrow-down"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Multiple Export Formats
+                        </h5>
+
+                        <p class="text-secondary">
+                            Export your final summary in formats such as
+                            TXT, PDF, DOC/DOCX, or PPT.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-collection"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Multiple Content Sources
+                        </h5>
+
+                        <p class="text-secondary">
+                            Work with URLs, videos, RSS feeds, and different
+                            document formats from one platform.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 5 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Save Your Analyses
+                        </h5>
+
+                        <p class="text-secondary">
+                            Keep track of your previously processed content
+                            and generated summaries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 6 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="feature-card h-100">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <h5 class="fw-bold mt-4">
+                            Secure User Access
+                        </h5>
+
+                        <p class="text-secondary">
+                            Your analyses and saved content are associated
+                            with your own account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+
+    <section class="faq-section py-5" id="faq">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+
+                <span class="badge rounded-pill bg-light text-primary px-3 py-2 mb-3">
+                    FAQ
+                </span>
+
+                <h2 class="fw-bold">
+                    Frequently Asked
+                    <span class="text-primary">Questions.</span>
+                </h2>
+
+                <p class="text-secondary mt-3">
+                    Everything you need to know about InfoLens.
+                </p>
+
+            </div>
+
+
+            <!-- FAQ Accordion -->
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="accordion" id="faqAccordion">
+
+
+                        <!-- Question 1 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne">
+                                    What is InfoLens?
+                                </button>
+
+                            </h2>
+
+                            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body text-secondary">
+                                    InfoLens is an AI-powered content intelligence
+                                    platform that helps you turn articles, YouTube
+                                    videos, RSS feeds, and documents into clear
+                                    and concise summaries.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqTwo">
+                                    What type of content can I upload?
+                                </button>
+
+                            </h2>
+
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body text-secondary">
+                                    You can provide an Article URL, YouTube URL,
+                                    RSS feed, PDF, DOC/DOCX document, or TXT file.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Question 3 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqThree">
+                                    Can I edit the generated summary?
+                                </button>
+
+                            </h2>
+
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body text-secondary">
+                                    Yes. After the AI generates the summary,
+                                    you can review and edit it before exporting
+                                    the final version.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Question 4 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFour">
+                                    Which formats can I export?
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body text-secondary">
+                                    Your edited summary can be exported into
+                                    formats such as TXT, PDF, DOC/DOCX, and PPT.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Question 5 -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFive">
+                                    Do I need an account to use InfoLens?
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body text-secondary">
+                                    An account will be required to access the
+                                    application, save your analyses, and manage
+                                    your generated content.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+
+    <section class="cta-section py-5">
+
+        <div class="container">
+
+            <div class="cta-box text-center">
+
+                <span class="badge rounded-pill bg-white text-primary px-3 py-2 mb-3">
+                    Start with InfoLens
+                </span>
+
+                <h2 class="fw-bold text-black mb-3">
+                    Turn Information Into Clarity.
+                </h2>
+
+                <p class="text-black-50 mb-4">
+                    Bring your content, let AI summarize it,
+                    and make the final result your own.
+                </p>
+
+                <a href="signup.html" class="btn btn-light btn-lg px-4">
+                    Get Started
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row py-5">
+
+                <!-- Brand -->
+                <div class="col-lg-5 mb-4 mb-lg-0">
+
+                    <h4 class="fw-bold">
+                        InfoLens
+                    </h4>
+
+                    <p class="text-secondary mt-3">
+                        An AI-powered content intelligence platform
+                        designed to help you understand, refine,
+                        and transform information.
+                    </p>
+
+                </div>
+
+
+                <!-- Product -->
+                <div class="col-6 col-lg-2">
+
+                    <h6 class="fw-bold mb-3">
+                        Product
+                    </h6>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#product">
+                                Content
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#features">
+                                Features
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#how-it-works">
+                                How It Works
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Company -->
+                <div class="col-6 col-lg-2">
+
+                    <h6 class="fw-bold mb-3">
+                        Company
+                    </h6>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#faq">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signup.html">
+                                Sign Up
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Account -->
+                <div class="col-12 col-lg-3 mt-4 mt-lg-0">
+
+                    <h6 class="fw-bold mb-3">
+                        Get Started
+                    </h6>
+
+                    <p class="text-secondary small">
+                        Create your account and start turning
+                        your content into useful insights.
+                    </p>
+
+                    <a href="signup.html" class="btn btn-primary">
+                        Create Account
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Footer -->
+
+            <div class="footer-bottom py-3">
+
+                <div class="d-flex flex-column flex-md-row
+                        justify-content-between
+                        align-items-center">
+
+                    <p class="small text-secondary mb-2 mb-md-0">
+                        © 2026 InfoLens. All rights reserved.
+                    </p>
+
+                    <p class="small text-secondary mb-0">
+                        AI-powered content intelligence
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
